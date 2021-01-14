@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="appronto.renderhtml.RenderHTML" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Render HTML</name>
+    <description>Render HTML as native views</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="content" type="attribute" required="true">
+                <caption>Content</caption>
+                <description>Select the richtext content to render</description>
+               	<attributeTypes>
+		            <attributeType name="String"/>
+			    </attributeTypes>
+	        </property>
+            <property key="marginLeft" type="integer" required="true" defaultValue="0">
+                <caption>Left margin</caption>
+                <description>Select the margin left to the widget</description>
+	        </property>
+            <property key="marginRight" type="integer" required="true" defaultValue="0">
+                <caption>Right margin</caption>
+                <description>Select the margin right to the widget</description>
+	        </property>
+            <property key="fontSize" type="integer" required="true" defaultValue="0">
+                <caption>Font size</caption>
+                <description>Select the size for the rendered text. Headers are sized increasingly (H5 +1 ... H1 +5)</description>
+	        </property>
+            <property key="fontColor" type="string" required="true" defaultValue="black">
+                <caption>Font color text</caption>
+                <description>Select the color for the rendered text</description>
+	        </property>
+            <property key="fontColorHeaders" type="string" required="true" defaultValue="black">
+                <caption>Font color headers</caption>
+                <description>Select the color for the rendered headers</description>
+	        </property>            
+        </propertyGroup>
+    </properties>
+</widget>
